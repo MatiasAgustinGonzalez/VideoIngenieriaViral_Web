@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contacto</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="../css/styles_estructural.css" />
 </head>
 <body>
@@ -12,22 +13,20 @@
       <div>
         <img src="../assets/img/Logo VIV - Sin Vectorizar.png" alt="Logo VideoIngenieriaViral" class="logo"/>
       </div>
-      <h1>VIDEO INGENIERIA VIRAL</h1>
+      <h1 class="header-title">VIDEO INGENIERIA VIRAL</h1>
     </div>
     <nav>
-      <ul>
+      <ul class="nav-bar">
         <li><a href="../index.html"><img src="../assets/img/Logo Home.png" alt="" class="img-nav"/>INICIO</a></li>
         <li><a href="../pages/nosotros.html"><img src="../assets/img/Logo About.png" alt="" class="img-nav"/>NOSOTROS</a></li>
         <li><a href="../pages/blog.html"><img src="../assets/img/Logo Texto.png" alt="" class="img-nav"/>BLOG</a></li>
         <li><a href="../pages/canal.html"><img src="../assets/img/Logo YouTube Blanco y Negro.png" alt="" class="img-nav"/>CANAL</a></li>
-        <li><a href="#"><img src="../assets/img/Logo Contacto.png" alt="" class="img-nav"/>CONTACTO</a></li>
+        <li><a href="../pages/contacto.html"><img src="../assets/img/Logo Contacto.png" alt="" class="img-nav"/>CONTACTO</a></li>
+        <li><a href="#"><img src="../assets/img/Logo Usuario Avatar.png" alt="Logo Usuario" class="img-nav"></a></li>
       </ul>
     </nav>
-    <div class="session">
-      <img src="../assets/img/Logo Usuario Avatar.png" alt="Logo Usuario" class="img-nav"/>
-    </div>
   </header>
-  <main>
+  <!-- <main>
     <form>
       <p>Ponte en contacto con nosotros</p>
       <div class="form-containe">
@@ -44,7 +43,30 @@
       </div>
       <button>Enviar</button>
     </form>
-  </main>
+  </main> -->
+  <main class="container my-5">
+  <form>
+    <p class="h4 mb-4">Ponte en contacto con nosotros</p>
+    
+    <div class="form-group mb-3">
+      <label for="nombre">Ingrese Nombre:</label>
+      <input type="text" id="nombre" class="form-control" placeholder="Nombre" required>
+    </div>
+
+    <div class="form-group mb-3">
+      <label for="apellido">Ingrese Apellido:</label>
+      <input type="text" id="apellido" class="form-control" placeholder="Apellido" required>
+    </div>
+
+    <div class="form-group mb-3">
+      <label for="email">Ingrese Email:</label>
+      <input type="email" id="email" class="form-control" placeholder="ejemplo@correo.com" required>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </form>
+</main>
+
   <footer>
     <div>
       <p>Nuestras Redes</p>
@@ -67,5 +89,9 @@
       <button>Suscribite</button>
     </div>
   </footer>
+  <!-- Bootstrap JS and dependencies (optional but recommended) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
